@@ -1,0 +1,116 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    margin: 0;
+    background-color: #f2f2f2; /* Optional: Background color */
+  }
+  @font-face {
+    font-family: 'my font';
+    src: url(asset/Montserrat/Montserrat-VariableFont_wght.ttf);
+  }
+  @font-face {
+    font-family: 'faunce';
+    src: url(/asset/Fraunces/Fraunces-VariableFont_SOFT\,WONK\,opsz\,wght.ttf);
+  }
+.img-container img{
+    width: 55%;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    margin-top: 1.5rem;
+}
+.img-container{
+    display: flex;
+    justify-content:center ;
+}
+.text-container{
+    margin-left: 8rem;
+    color:  hsl(212, 21%, 14%);
+}
+.text-container h3{
+    font-family: 'my font';
+    font-weight: lighter;
+    text-transform: uppercase;
+    font-size: 0.875rem;
+    letter-spacing: .2rem;
+}
+.text-container h1{
+    font-family: 'faunce';
+    font-size: 1.5rem;
+}
+.text-container p{
+    font-size: 0.875rem;
+    font-family: 'my font';
+    word-spacing: .2rem;
+
+}
+.price{
+    display: flex;
+    gap: 1rem;
+    
+}
+.price h1{
+    color: hsl(158, 36%, 37%);
+}
+.price h4{
+    font-weight: lighter;
+    text-decoration: line-through;
+    font-size:.85rem;
+}
+.btn button{
+    width: 75%;
+    padding: .8rem;
+    border: none;
+    background-color: hsl(158, 36%, 37%);
+    color: white;
+    font-family: 'my font';
+    font-weight: bold;
+    border-radius: .25rem;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    margin-top: 1rem;
+}
+.attribution a { color: hsl(228, 45%, 44%); }
+@media(min-width:768px){
+    .container-1{
+        display: flex;
+        max-width: 600px;
+        flex-direction: row;
+        background: white;
+        border: 1rem;
+        overflow: hidden;
+    }
+    .img-container img{
+        width: 100%;
+        height: auto;
+        border-radius: 0;
+    }
+    .img-container{
+        flex: 1;
+    }
+    .text-container{
+        flex: 1;
+        padding: 2rem;
+        margin-left: 0;
+    }
+    .btn button{
+        width: 100%;
+    }
+    
+}
+@media(min-width: 1024px){
+      .container-1{
+        max-width: 900px;
+      }  
+      .text-container h1{
+        font-size: 2rem;
+      }
+      .price h1{
+        font-size: 1.75rem;
+      }
+      
+}
